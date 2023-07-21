@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Welcome page</title>
+        <style>
+            *{
+                background: rgba(230, 242, 255,1);
+                margin-top: 3px;
+            }
+            .logo{
+                padding: 0%;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='/images/ULFG logo.jpg') }}"  alt="Faculty's LOGO" width="9%" >
+        </div>
+        
+        
+        <p style="font-size:200%; text-align: center;font-family:courier, sans-serif">
+            This web user interface is part of the final year project 
+        </p>
+        
+        <p style="font-size:300%; text-align: center;font-family:courier,serif ;font-weight: bold;">
+            Intelligent Real-time Traffic Monitoring System
+        </p>
+          
+        <p style="font-size:200%; text-align: center;font-family:courier,sans-serif">
+            Realised by:</br>
+            Aya HAIDAR AHMAD and Rihab ATWI 
+        </p>
+        
+        <p style="font-size:200%; text-align: center;font-family:courier">
+            Supervised by:</br> 
+            Dr. Rida EL CHALL 
+        </p>
+        
+
+        
+        <p>
+            <form action="/options" target="_self">
+                <center>
+                <input type="image" src="{{ url_for('static', filename='/images/next arrow transparent.png') }}" value="GO" width="10%" /> 
+                </center>
+            </form>
+        </p>
+        
+
+    </body>
+</html>
